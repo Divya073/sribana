@@ -1,0 +1,439 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #111111 ;
+    width: 100vw;
+    height: 100vh;
+    color:white;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+header {
+    height: 70px;
+    background-color:rgb(25, 26, 34);
+    padding-top: 0.7rem;
+    /* opacity: 0; */
+}
+.navbar .getstarted {
+	background: #106eea;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color:white;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background:white;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.log {
+    margin-left: 10rem;
+}
+
+.headerbtn {
+    padding: 20px;
+    background-color: orange;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10rem;
+}
+
+/* SECTION 1 STYLING */
+
+.section1 {
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: brown; */
+    background-image: url("/img/section2imggg.jpg");
+    background-size: cover; 
+
+}
+
+.textbox h1 {
+    font-size: 3rem;
+}
+
+.textbox h2 {
+    font-size: 2.4rem;
+    font-weight: lighter;
+}
+
+.bookConsultation {
+    height: 400px;
+    width: 390px;
+    background-color:rgb(25, 26, 34);
+    color:white;
+    box-shadow: 0px 10px 20px white;
+}
+
+.bookConsultation h2 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* SECTION1 FORM STYLING */
+
+.formcontainer {
+    padding: 1rem;
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+}
+
+select {
+    width: 350px;
+    height: 40px;
+    background-color: aliceblue;
+}
+
+.formbtn {
+    height: 30px;
+    width: 200px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* SECTION2 STYLING*/
+.section2 {
+    height: 500px;
+    background-color:rgb(25, 26, 34);
+    color:WHITE;
+}
+
+.section2 h2 {
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 2.1rem;
+}
+
+.ecpu {
+    height: 65%;
+    width: 80%;
+    background-color: rgb(69, 70, 71);
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.box1 {
+    width: 320px;
+    height: 200px;
+    background-color: rgb(69, 70, 71);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* SECTION3 STYLING */
+
+.section3 {
+    height: 650px;
+    /* background-color: rgb(42, 165, 69); */
+    background-image: url("/img/section3imgggg.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(85, 81, 75, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec3_content {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.overlay h1 {
+    text-align: center;
+}
+
+.sec3btn {
+    height: 40px;
+    width: 300px;
+    border-radius: 4px;
+    background-color: #fab207;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+/* SECTION4 STYLING*/
+.section4 {
+    height: 500px;
+    background-color: rgb(25, 26, 34);
+    
+}
+
+.section4 h2 {
+    text-align: center;
+    padding-top: 4rem;
+    color: white;
+}
+
+.s4container {
+    height: 65%;
+    width: 80%;
+    background-color:rgb(25, 26, 34);
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.s4box {
+    width: 320px;
+    height: 200px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    
+}
+
+.s4box h3 {
+    color: black;
+}
+
+/* SECTION5 STYLING */
+
+.section5 {
+    height: 600px;
+    background-color: rgb(25, 26, 34);
+    
+}
+
+.section5 h1 {
+    text-align: center;
+    padding-top: 4rem;
+    color: white;
+}
+
+.tablecreation {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    color: white;
+}
+
+table td,
+th {
+    width: 440px;
+    height: 48px;
+    border: 1px solid white;
+}
+
+
+.tablebtn {
+    height: 30px;
+    width: 300px;
+    border-radius: 4px;
+    background-color: #fab207;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+/* SECTION6 STYLING */
+.section6 {
+    height: 500px;
+    background-color: rgb(25, 26, 34);
+}
+
+.partnerslist {
+    height: 65%;
+    width: 90%;
+    background-color: rgb(25, 26, 34);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.s6box {
+    width: 100px;
+    height: 70px;
+    background-color:rgb(25, 26, 34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* SECTION7 STYLING */
+.section7 {
+    height: 400px;
+    background-color: rgb(25, 26, 34);
+    color: white;
+}
+
+.section7 h2 {
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+}
+
+.financePartners {
+    width: 90%;
+    background-color: rgb(25, 26, 34);
+    margin: auto;
+    margin-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+/* SECTION8 STYLING*/
+.section8 {
+    height: 900px;
+    background-color:rgb(25, 26, 34);
+    color: white;
+}
+
+.section8 h1 {
+    text-align: center;
+    padding-top: 4rem;
+    color: white;
+}
+
+.vedios {
+    padding-left: 11rem;
+    padding-top: 2rem;
+}
+
+iframe {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+/* SECTION9 STYLING */
+.section9 {
+    height: 700px;
+    background-color:rgb(25, 26, 34);
+    color: white;
+}
+
+.section9 h1 {
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+}
+
+.projectbox {
+    height: 400px;
+    width: 200px;
+}
+
+.projectbox p {
+    padding-top: 1rem;
+    line-height: 1.4rem;
+    color: rgb(81, 80, 80);
+}
+
+.projectbox img {
+    height: 265px;
+    width: 212px;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+
+/* SECTION10 SECTION*/
+
+.section10 {
+    height: 200px;
+    background-color: #fab207;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height:160px;
+}
+
+.section10 p {
+    font-size: 2.2rem;
+    color: black;
+}
+
+.section10 button {
+    padding: 10px 20px;
+    background-color: rgb(42, 41, 40);
+    color: white;
+    cursor: pointer;
+}

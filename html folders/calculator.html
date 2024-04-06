@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+          padding: 20px 0; /* Adjust the top and bottom padding as needed */
+          text-transform: uppercase;
+        }
+        
+        .container1{
+            background-color:rgb(25, 26, 34); /* Optional background color, adjust as needed */
+            padding: 40px;
+            margin-top: 70px;
+            color: white;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .calculator-section {
+            margin-bottom: 40px;
+        }
+        .btn{
+            margin-top: 30px;
+            background-color:#fab207;
+            border: #fab207;
+            color: black;
+        }
+        .btn:hover,.btn:active{
+            background-color: black;
+            border: black;
+            color:#fab207
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><span class="text-warning">SRI BANA</span> DEVELOPERS</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="book.html">Book An Appointment</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="packages.html">Packages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="calculator.html">Calculator</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="projects.html">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">About us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <div class="container1">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style="color: #fab207;">Construction Area & Cost Calculator</h2>
+                <p>Fill the below fields to calculate the allowed/desired construction area</p>
+                <form>
+                    <div class="form-group">
+                        <label for="landArea">Land Area (SFT):</label>
+                        <input type="number" class="form-control" id="landArea" placeholder="Enter Land Area" max="1000">
+                    </div>
+                    <div class="form-group">
+                        <label for="roadWidth">Road Width:</label>
+                        <select class="form-control" id="roadWidth">
+                            <option value="">Select</option>
+                            <option value="10">20 ft</option>
+                            <option value="15">30 ft</option>
+                            <option value="20">40 ft</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="floors">Number of Floors:</label>
+                        <select class="form-control" id="floors">
+                            <option value="">Select</option>
+                            <option value="1">ground</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="package">Select Package:</label>
+                        <select class="form-control" id="package">
+                            <option value="">Select</option>
+                            <option value="basic">Basic</option>
+                            <option value="standard">classic</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </div>
+    
+                    <button type="submit" class="btn btn-primary">Calculate</button>
+                </form>
+                <div id="result" class="mt-3"></div> 
+            </div>
+            <div class="col-md-6">
+                <h2 style="color: #fab207;">EMI Calculator</h2>
+                <p>Fill the below fields to calculate EMI on the loan amount</p>
+                <form id="loanForm">
+                    <div class="form-group">
+                        <label for="downPayment">Down Payment:</label>
+                        <select class="form-control" id="downPayment">
+                            <option value="">Select</option>
+                            <option value="10">0.1</option>
+                            <option value="20">0.2</option>
+                            <option value="30">0.3</option>
+                            <option value="40">0.4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="interestRate">Rate of Interest (%):</label>
+                        <input type="number" class="form-control" id="interestRate" placeholder="Enter Interest Rate">
+                    </div>
+                    <div class="form-group">
+                        <label for="loanTenure">Loan Tenure:</label>
+                        <select class="form-control" id="loanTenure">
+                            <option value="">Select</option>
+                            <option value="12">5 Year</option>
+                            <option value="24">10 Years</option>
+                            <option value="36">15 Years</option>
+                            <option value="37">20 years</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calculate</button>
+                </form>
+                <div id="loanResult" class="mt-3"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="color: #fab207;">Personal Details</h2>
+                        <p>Please share your contact details for us to send you the calculated information</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone number *</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email +</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                            </div>
+                            <p>The quotation will be sent to your email. Please provide the correct email address and phone number to receive our detailed quotation.</p>
+                            <button type="submit" class="btn btn-primary">Request Quote</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to calculate the total cost
+        function calculate() {
+            var landArea = parseFloat(document.getElementById('landArea').value);
+            var roadWidth = parseFloat(document.getElementById('roadWidth').value);
+            var floors = parseFloat(document.getElementById('floors').value);
+            var package = document.getElementById('package').value;
+           
+    
+            // Sample calculation logic
+            var baseCost = landArea * 10; // Assuming base cost per SFT is $100
+            var roadCost = roadWidth * 2; // Assuming road cost per ft is $10
+            var floorsCost = floors * 1000; // Assuming cost per floor is $10,000
+    
+            var totalCost = baseCost + roadCost + floorsCost;
+    
+            // Additional cost based on package
+            if (package === 'basic') {
+                totalCost += 5000; // Additional cost for basic package
+            } else if (package === 'standard') {
+                totalCost += 10000; // Additional cost for standard package
+            } else if (package === 'premium') {
+                totalCost += 20000; // Additional cost for premium package
+            }
+    
+            // Convert total cost to INR using exchange rate
+            var exchangeRate = 75; // Assuming 1 USD = 75 INR
+            var totalCostINR = totalCost * exchangeRate;
+    
+            // Displaying the result
+            document.getElementById('result1').innerHTML = "Total Cost is ₹"  + totalCostINR.toFixed(2);
+        }
+    
+        // Add event listener to the submit button to trigger the calculation
+        document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            calculate(); // Call the calculate function
+        });
+    </script>
+
+    <script>
+        // Function to calculate the monthly loan installment
+        function calculateLoan() {
+            var downPayment = parseFloat(document.getElementById('downPayment').value);
+            var interestRate = parseFloat(document.getElementById('interestRate').value);
+            var loanTenure = parseInt(document.getElementById('loanTenure').value);
+
+            if (!downPayment || !interestRate || !loanTenure) {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            var loanAmount = 1 - downPayment;
+            var monthlyInterestRate = (interestRate / 100) / 12;
+            var totalPayments = loanTenure * 12;
+
+            var monthlyPayment = loanAmount * monthlyInterestRate / (1 - Math.pow(1 + monthlyInterestRate, -totalPayments));
+
+            // Convert monthly payment to INR
+            var monthlyPaymentINR = monthlyPayment * 75; // Assuming 1 USD = 75 INR
+
+            // Displaying the result in INR
+            document.getElementById('loanResult').innerHTML = "Monthly Payment: ₹" + monthlyPaymentINR.toFixed(2);
+        }
+
+        // Add event listener to the form submit button to trigger the calculation
+        document.getElementById('loanForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            calculateLoan(); // Call the calculateLoan function
+        });
+    </script>
+</body>
+</html>
